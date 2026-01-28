@@ -102,9 +102,9 @@ class EditStudentActivity : AppCompatActivity() {
             .show()
     }
 
-    private id = originalId ?: return
-        val success = StudentsRepository.shared.deleteStudent(id
-        val success = StudentsRepository.shared.deleteStudent(originalId!!)
+    private fun deleteStudent() {
+        val id = originalId ?: return
+        val success = StudentsRepository.shared.deleteStudent(id)
         if (success) {
             finish()
         }
