@@ -32,7 +32,8 @@ class EditStudentActivity : AppCompatActivity() {
     }
 
     private fun loadStudentData() {
-        val student = StudentsRepository.shared.getStudentById(originalId!!)
+        val id = originalId ?: return
+        val student = StudentsRepository.shared.getStudentById(id)
         if (student != null) {
             with(binding) {
                 editStudentName.setText(student.name)
@@ -80,7 +81,8 @@ class EditStudentActivity : AppCompatActivity() {
             isChecked = isChecked
         )
 
-        val success = StudentsRepository.shared.updateStudent(originalId!!, updatedStudent)
+        val currentId = originalId ?: return
+        val success = StudentsRepository.shared.updateStudent(currentId, updatedStudent)
 
         if (success) {
             finish()
@@ -100,7 +102,8 @@ class EditStudentActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun deleteStudent() {
+    private id = originalId ?: return
+        val success = StudentsRepository.shared.deleteStudent(id
         val success = StudentsRepository.shared.deleteStudent(originalId!!)
         if (success) {
             finish()
