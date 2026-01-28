@@ -20,6 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.StudentDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.EditStudentActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.StudentDetailsActivity" />
     </application>
 
 </manifest>
