@@ -20,13 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/edit_student_avatar"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="32dp"
                 android:layout_marginBottom="16dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/user" />
@@ -91,7 +92,6 @@
 
         <Button
             android:id="@+id/edit_student_delete_btn"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -102,7 +102,6 @@
 
         <Button
             android:id="@+id/edit_student_save_btn"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
