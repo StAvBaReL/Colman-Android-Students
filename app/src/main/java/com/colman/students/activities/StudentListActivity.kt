@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.colman.students.adapters.StudentAdapter
 import com.colman.students.base.Constants
@@ -30,6 +31,9 @@ class StudentListActivity : AppCompatActivity() {
         }
 
         binding.studentsRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.studentsRecyclerView.addItemDecoration(
+            DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
+        )
 
         binding.addStudentFab.setOnClickListener {
             val intent = Intent(this, AddStudentActivity::class.java)
