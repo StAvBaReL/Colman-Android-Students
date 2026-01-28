@@ -82,7 +82,7 @@
                 android:layout_weight="1"
                 android:text="@string/delete_button"
                 android:backgroundTint="#F44336"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:layout_marginEnd="8dp"/>
 
             <Button
