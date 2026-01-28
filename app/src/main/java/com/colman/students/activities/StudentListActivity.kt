@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.colman.students.adapters.StudentAdapter
+import com.colman.students.base.Constants
 import com.colman.students.databinding.ActivityStudentListBinding
 import com.colman.students.models.StudentsRepository
 
@@ -39,6 +40,10 @@ class StudentListActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val students = StudentsRepository.shared.getAllStudents()
-        binding.studentsRecyclerView.adapter = StudentAdapter(students)
+        binding.studentsRecyclerView.adapter = StudentAdapter(students) { student ->
+            val intent = Intent(this, StudentDetailsActivity::class.java)
+            intent.putExtra(Constants.STUDENT_ID_KEY, student.id)
+            startActivity(intent)
+        }
     }
 }
