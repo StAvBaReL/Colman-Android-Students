@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Students</string>
+    <string name="edit_student_title">Edit Student</string>
+    <string name="name_hint">Name</string>
+    <string name="id_hint">ID</string>
+    <string name="phone_hint">Phone</string>
+    <string name="address_hint">Address</string>
+    <string name="is_checked">Checked</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="delete_button">Delete</string>
+    <string name="save_button">Save</string>
+    <string name="delete_confirmation_title">Delete Student</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete this student?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error_missing_fields">Please fill all fields</string>
+    <string name="error_update_failed">Update failed. ID might already exist.</string>
 </resources>
