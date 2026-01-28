@@ -4,12 +4,6 @@ class StudentsRepository private constructor() {
 
     private val students = mutableListOf<Student>()
 
-    init {
-        students.add(Student("312345678", "Idan Cohen", "050-1234567", "Tel Aviv", false))
-        students.add(Student("208765432", "Noa Levi", "052-7654321", "Haifa", true))
-        students.add(Student("305556667", "Yossi Mizrahi", "054-1122334", "Jerusalem", false))
-    }
-
     fun getAllStudents(): List<Student> {
         return students.toList()
     }
