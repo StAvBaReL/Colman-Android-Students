@@ -42,9 +42,9 @@ class StudentDetailsActivity : AppCompatActivity() {
 
         binding.apply {
             tvName.text = student.name
-            tvId.text = "ID: ${student.id}"
-            tvPhone.text = "Phone: ${student.phone}"
-            tvAddress.text = "Address: ${student.address}"
+            tvId.text = getString(R.string.student_id_label, student.id)
+            tvPhone.text = getString(R.string.student_phone_label, student.phone)
+            tvAddress.text = getString(R.string.student_address_label, student.address)
             cbIsChecked.isChecked = student.isChecked
             ivStudentAvatar.setImageResource(R.drawable.ic_launcher_foreground)
         }
