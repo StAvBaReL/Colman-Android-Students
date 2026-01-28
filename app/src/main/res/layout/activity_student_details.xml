@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:fitsSystemWindows="true"
+    android:padding="16dp"
+    tools:context=".activities.StudentDetailsActivity">
 
     <ImageView
         android:id="@+id/ivStudentAvatar"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,81 +23,68 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:text="Student Name"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivStudentAvatar" />
+        app:layout_constraintTop_toBottomOf="@id/ivStudentAvatar"
+        tools:text="Student Name" />
 
     <TextView
         android:id="@+id/tvId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textSize="18sp"
-        tools:text="ID: 123456789"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvName" />
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        tools:text="ID: 123456789" />
 
     <TextView
         android:id="@+id/tvPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textSize="18sp"
-        tools:text="Phone: 050-1234567"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvId" />
+        app:layout_constraintTop_toBottomOf="@id/tvId"
+        tools:text="Phone: 050-1234567" />
 
     <TextView
         android:id="@+id/tvAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:textSize="18sp"
-        tools:text="Address: Tel Aviv"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPhone" />
+        app:layout_constraintTop_toBottomOf="@id/tvPhone"
+        tools:text="Address: Tel Aviv" />
 
     <CheckBox
         android:id="@+id/cbIsChecked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:clickable="false"
         android:focusable="false"
-        android:text="Checked In"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/student_checked_label"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAddress" />
-
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/back_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnEdit"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnEdit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/edit_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@id/btnBack" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
