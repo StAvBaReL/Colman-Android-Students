@@ -18,4 +18,12 @@
     <string name="student_id_label">ID: %s</string>
     <string name="student_phone_label">Phone: %s</string>
     <string name="student_address_label">Address: %s</string>
+    <string name="student_checked_label">Checked</string>
+
+    <string name="student_name_hint">Name</string>
+    <string name="student_id_hint">ID</string>
+    <string name="student_phone_hint">Phone</string>
+    <string name="student_address_hint">Address</string>
+    <string name="error_student_exists">Student with this ID already exists</string>
+    <string name="title_activity_add_student">Add Student</string>
 </resources>
