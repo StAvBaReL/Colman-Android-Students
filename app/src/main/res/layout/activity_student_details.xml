@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Back"
+        android:text="@string/back_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnEdit"
         app:layout_constraintHorizontal_weight="1"
