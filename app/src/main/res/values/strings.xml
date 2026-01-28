@@ -20,10 +20,10 @@
     <string name="student_address_label">Address: %s</string>
     <string name="student_checked_label">Checked</string>
 
-    <string name="student_name_hint">Name</string>
-    <string name="student_id_hint">ID</string>
-    <string name="student_phone_hint">Phone</string>
-    <string name="student_address_hint">Address</string>
+    <item name="student_name_hint" type="string">@string/name_hint</item>
+    <item name="student_id_hint" type="string">@string/id_hint</item>
+    <item name="student_phone_hint" type="string">@string/phone_hint</item>
+    <item name="student_address_hint" type="string">@string/address_hint</item>
     <string name="error_student_exists">Student with this ID already exists</string>
     <string name="title_activity_add_student">Add Student</string>
 </resources>
