@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+PRD.md
+plan.md
+/.idea/copilot.*.xml
+AGENTS.md
+Rules

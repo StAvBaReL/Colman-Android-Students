@@ -1,5 +1,6 @@
-package com.colman.students
+package com.colman.students.activities
 
+import com.colman.students.R
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
