@@ -68,7 +68,7 @@ class EditStudentActivity : AppCompatActivity() {
         val address = binding.editStudentAddress.text.toString()
         val isChecked = binding.editStudentCheck.isChecked
 
-        if (name.isBlank() || id.isBlank()) {
+        if (name.isBlank() || id.isBlank() || phone.isBlank() || address.isBlank()) {
             Toast.makeText(this, R.string.error_missing_fields, Toast.LENGTH_SHORT).show()
             return
         }
