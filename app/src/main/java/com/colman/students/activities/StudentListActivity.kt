@@ -1,5 +1,6 @@
 package com.colman.students.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +29,15 @@ class StudentListActivity : AppCompatActivity() {
         }
 
         binding.studentsRecyclerView.layoutManager = LinearLayoutManager(this)
+
+        binding.addStudentFab.setOnClickListener {
+            val intent = Intent(this, AddStudentActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
         val students = StudentsRepository.shared.getAllStudents()
         binding.studentsRecyclerView.adapter = StudentAdapter(students)
     }
