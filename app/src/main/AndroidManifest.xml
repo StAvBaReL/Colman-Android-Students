@@ -23,11 +23,16 @@
         <activity
             android:name=".activities.StudentDetailsActivity"
             android:exported="false"
-            android:parentActivityName=".activities.MainActivity" />
+            android:parentActivityName=".activities.StudentListActivity" />
         <activity
             android:name=".activities.EditStudentActivity"
             android:exported="false"
             android:parentActivityName=".activities.StudentDetailsActivity" />
+        <activity
+            android:name=".activities.AddStudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_student"
+            android:parentActivityName=".activities.StudentListActivity" />
     </application>
 
 </manifest>
