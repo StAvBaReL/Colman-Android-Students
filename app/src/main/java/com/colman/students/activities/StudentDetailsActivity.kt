@@ -52,9 +52,9 @@ class StudentDetailsActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         binding.btnEdit.setOnClickListener {
-            val intent = Intent(this, EditStudentActivity::class.java)
-            intent.putExtra(Constants.STUDENT_ID_KEY, studentId)
-            startActivity(intent)
+            val editIntent = Intent(this, EditStudentActivity::class.java)
+            editIntent.putExtra(Constants.STUDENT_ID_KEY, studentId)
+            startActivity(editIntent)
         }
     }
 }
