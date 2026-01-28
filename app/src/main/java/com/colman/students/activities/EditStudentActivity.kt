@@ -1,6 +1,7 @@
 package com.colman.students.activities
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,7 @@ class EditStudentActivity : AppCompatActivity() {
         binding = ActivityEditStudentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         originalId = intent.getStringExtra(Constants.STUDENT_ID_KEY)
 
         if (originalId == null) {
@@ -48,10 +50,6 @@ class EditStudentActivity : AppCompatActivity() {
     }
 
     private fun setupListeners() {
-        binding.editStudentCancelBtn.setOnClickListener {
-            finish()
-        }
-
         binding.editStudentSaveBtn.setOnClickListener {
             saveStudent()
         }
@@ -59,6 +57,15 @@ class EditStudentActivity : AppCompatActivity() {
         binding.editStudentDeleteBtn.setOnClickListener {
             showDeleteConfirmation()
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     private fun saveStudent() {
