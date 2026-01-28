@@ -23,10 +23,12 @@
         <activity
             android:name=".activities.StudentDetailsActivity"
             android:exported="false"
+            android:label="@string/title_activity_student_details"
             android:parentActivityName=".activities.StudentListActivity" />
         <activity
             android:name=".activities.EditStudentActivity"
             android:exported="false"
+            android:label="@string/title_activity_edit_student"
             android:parentActivityName=".activities.StudentDetailsActivity" />
         <activity
             android:name=".activities.AddStudentActivity"

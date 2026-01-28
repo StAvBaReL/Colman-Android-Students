@@ -26,4 +26,8 @@
     <item name="student_address_hint" type="string">@string/address_hint</item>
     <string name="error_student_exists">Student with this ID already exists</string>
     <string name="title_activity_add_student">Add Student</string>
+    <string name="title_activity_student_details">Student Details</string>
+    <string name="title_activity_edit_student">Edit Student</string>
+    <string name="back_button">Back</string>
+    <string name="edit_button">Edit</string>
 </resources>
