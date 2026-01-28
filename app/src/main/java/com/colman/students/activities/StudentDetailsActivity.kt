@@ -51,6 +51,10 @@ class StudentDetailsActivity : AppCompatActivity() {
     }
 
     private fun setupListeners() {
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
+
         binding.btnEdit.setOnClickListener {
             val editIntent = Intent(this, EditStudentActivity::class.java)
             editIntent.putExtra(Constants.STUDENT_ID_KEY, studentId)

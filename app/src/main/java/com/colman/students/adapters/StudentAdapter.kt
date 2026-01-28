@@ -8,7 +8,8 @@ import com.colman.students.models.Student
 import com.colman.students.models.StudentsRepository
 
 class StudentAdapter(
-    private val students: List<Student>
+    private val students: List<Student>,
+    private val onItemClick: (Student) -> Unit
 ) : RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {
 
     class StudentViewHolder(val binding: StudentListRowBinding) :
@@ -27,6 +28,10 @@ class StudentAdapter(
 
     override fun onBindViewHolder(holder: StudentViewHolder, position: Int) {
         val student = students[position]
+
+        holder.itemView.setOnClickListener {
+            onItemClick(student)
+        }
 
         with(holder.binding) {
             studentName.text = student.name
