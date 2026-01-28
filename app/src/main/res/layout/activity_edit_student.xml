@@ -36,6 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:autofillHints=""
                 android:hint="@string/name_hint"
                 android:inputType="textPersonName" />
 
@@ -44,6 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:autofillHints=""
                 android:hint="@string/id_hint"
                 android:inputType="number" />
 
@@ -52,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:autofillHints=""
                 android:hint="@string/phone_hint"
                 android:inputType="phone" />
 
@@ -60,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:autofillHints=""
                 android:hint="@string/address_hint"
                 android:inputType="textPostalAddress" />
 
@@ -75,6 +79,7 @@
 
     <LinearLayout
         android:id="@+id/buttons_container"
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -86,6 +91,7 @@
 
         <Button
             android:id="@+id/edit_student_delete_btn"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -96,6 +102,7 @@
 
         <Button
             android:id="@+id/edit_student_save_btn"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
