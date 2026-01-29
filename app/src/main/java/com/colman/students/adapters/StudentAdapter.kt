@@ -36,14 +36,7 @@ class StudentAdapter(
         with(holder.binding) {
             studentName.text = student.name
             studentId.text = student.id
-
-            studentCheckbox.setOnCheckedChangeListener(null)
             studentCheckbox.isChecked = student.isChecked
-
-            studentCheckbox.setOnCheckedChangeListener { _, isChecked ->
-                student.isChecked = isChecked
-                StudentsRepository.shared.toggleCheckStatus(student.id)
-            }
         }
     }
 }
